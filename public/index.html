@@ -10,7 +10,22 @@
 </head>
 <body>
   <div id="player" style="width: 100%"></div>
-
+  <div>
+    <ul class="pages">
+     <li class="chat page">
+       <div class="chatArea">
+         <ul class="messages"></ul>
+       </div>
+       <input class="inputMessage" placeholder="在这里输入"/>
+     </li>
+     <li class="login page">
+       <div class="form">
+         <h3 class="title">你的昵称</h3>
+         <input class="usernameInput" type="text" maxlength="14" />
+       </div>
+     </li>
+    </ul>
+  </div>
 
 <script src="https://cdn.jsdelivr.net/npm/hls.js/dist/hls.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
