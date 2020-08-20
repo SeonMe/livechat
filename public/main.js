@@ -276,7 +276,7 @@ $(function() {
   });
 
   socket.on('reconnect_error', () => {
-    log('attempt to reconnect has failed');
+    log('聊天室已失联');
   });
 
 });
