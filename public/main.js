@@ -265,11 +265,11 @@ $(function() {
   });
 
   socket.on('disconnect', () => {
-    log('you have been disconnected');
+    log('已断开连接');
   });
 
   socket.on('reconnect', () => {
-    log('you have been reconnected');
+    log('已断开连接');
     if (username) {
       socket.emit('add user', username);
     }
