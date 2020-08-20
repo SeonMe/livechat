@@ -28,9 +28,9 @@ $(function() {
   const addParticipantsMessage = (data) => {
     var message = '';
     if (data.numUsers === 1) {
-      message += "目前有 1 在线";
+      message += "目前只有你在线";
     } else {
-      message += "目前有" + data.numUsers + "在线";
+      message += "目前在线人数 " + data.numUsers + " 人";
     }
     log(message);
   }
@@ -269,7 +269,7 @@ $(function() {
   });
 
   socket.on('reconnect', () => {
-    log('已断开连接');
+    log('聊天室找到了');
     if (username) {
       socket.emit('add user', username);
     }

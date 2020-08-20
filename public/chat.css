@@ -1,22 +1,55 @@
+/* Fix user-agent */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+html, input {
+  font-family:
+    "HelveticaNeue-Light",
+    "Helvetica Neue Light",
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    "Lucida Grande",
+    sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  word-wrap: break-word;
+}
 
 /* Pages */
 
 .pages {
-  height: 30vw;
-  margin: 10px;
-  width: 60%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 .page {
-  height: 30vw;
+  height: 100%;
   position: absolute;
-  width: 60%;
+  width: 100%;
 }
 
 /* Login Page */
 
 .login.page {
-  background-color: #2f2d3e;
+  background-color: #36303cf5;
 }
 
 .login.page .form {
@@ -32,19 +65,19 @@
 .login.page .form .usernameInput {
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #fff;
   outline: none;
   padding-bottom: 15px;
   text-align: center;
-  width: 200px;
+  width: 150px;
 }
 
 .login.page .title {
-  font-size: 150%;
+  font-size: 100%;
 }
 
 .login.page .usernameInput {
-  font-size: 140%;
+  font-size: 100%;
   letter-spacing: 3px;
 }
 
@@ -57,13 +90,14 @@
 
 .chat.page {
   display: none;
-  background-color: #2f2d3e;
+  background-color: #36303cf5;
 }
 
 /* Font */
 
 .messages {
   font-size: 100%;
+  color: #fff;
 }
 
 .inputMessage {
@@ -71,7 +105,7 @@
 }
 
 .log {
-  color: gray;
+  color: #fff;
   font-size: 70%;
   margin: 5px;
   text-align: center;
@@ -89,7 +123,6 @@
   margin: 0;
   overflow-y: scroll;
   padding: 10px 20px 10px 20px;
-  color: #fff;
 }
 
 .message.typing .messageBody {
@@ -97,7 +130,7 @@
 }
 
 .username {
-  font-weight: 700;
+  font-weight: 400;
   overflow: hidden;
   padding-right: 15px;
   text-align: right;
@@ -106,7 +139,7 @@
 /* Input */
 
 .inputMessage {
-  border: 5px solid #eee;
+  border: 5px solid #fff;
   bottom: 0;
   height: 50px;
   left: 0;
